@@ -1,0 +1,34 @@
+const qcimagesTag = document.getElementsByClassName("qcimages")[0];
+const imageTag = document.querySelector(".image");
+// const imageTag = document.getElementsByClassName("image")[0];
+// const btnTag = document.getElementsByClassName("btn")[0];
+const btnTag = document.querySelector(".btn");
+
+const qichang = ["https://i.pinimg.com/550x/96/63/f4/9663f484015908b23178a10cb9852fc9.jpg",
+                 "https://imgg.mangaina.com/1a2895ed281aeb27c9d7bc1c2efb4a1e.jpg",
+                 "https://bit.ly/3IjwIqt",
+                 "https://64.media.tumblr.com/d924a17baf56b6d102ca7f56ebb07092/1b262d23803d4cf5-e2/s540x810/f593fd25ab94e6470e8834faee5d7767e05c4553.jpg",
+                 "https://pbs.twimg.com/media/EM0zRZQWoAAwUC9.png",
+                 "https://pm1.narvii.com/7809/8d1c6f0b5e67e203c9bd0dd8232ef2c13b093595r1-1081-1081v2_hq.jpg",
+                 "https://i.pinimg.com/736x/7f/65/60/7f65609a2a90556d61738481243f7ee1.jpg",
+                 "https://i.pinimg.com/564x/d1/2b/30/d12b308ffbf95ba6b5fa23d8f60aa1f2.jpg",
+                 "https://pbs.twimg.com/media/EywQKwdXIAEX1Mb.jpg"]
+
+const originalImage = imageTag.src;
+let index = 0;
+
+const changeImage = () => {
+    if (index === 9) {
+        imageTag.src = originalImage;
+        index = 0;
+        return;
+    }
+
+    const imageLink = qichang[index];
+    imageTag.src = imageLink;
+    index++;
+
+    imageTag.classList.add("startTransition");
+}
+
+btnTag.addEventListener("click", changeImage);
