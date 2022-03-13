@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url("http://maxisizer.club/myanmar/promotion/mal/img/topstar.jpg");
+}
+
+.logo-head, .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    flex-direction: column;
+}
+
+.name p{
+    color: #ddc091;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.abhigya{
+    border-radius: 15px;
+}
+
+.profile p{
+    color: #fff;
+    line-height: 30px;
+}
+
+.profile p a{
+    color: #fff;
+    /* text-decoration: none; */
+}
+
+.profile p a:hover{
+    color: #ddc091;
+    font-weight: bold;
+}
+
+.sub_opis {
+    background-color: #00000090;
+    margin-top: 100px;
+}
+
+.sub_opis h3{
+    color: #fff;
+}
+
+.taro_card{
+    cursor: pointer;
+}
+
+.taro_card img{
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.taro_card:hover img{
+    transform: scale(1.1);
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .name p{
+        font-size: 20px;
+    }
+
+    .profile p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .sub_opis{
+        margin-top: 70px;
+    }
+
+    .sub_opis h3{
+        font-size: 20px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
