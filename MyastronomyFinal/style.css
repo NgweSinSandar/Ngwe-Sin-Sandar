@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url("http://maxisizer.club/myanmar/promotion/mal/img/topstar.jpg");
+}
+
+.block-head, .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    flex-direction: column;
+}
+
+.name p{
+    color: #ddc091;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.abhigya{
+    border-radius: 15px;
+}
+
+.profile p{
+    color: #fff;
+    line-height: 30px;
+}
+
+.profile p a{
+    color: #fff;
+    /* text-decoration: none; */
+}
+
+.profile p a:hover{
+    color: #ddc091;
+    font-weight: bold;
+}
+
+.sub_opis {
+    background-color: #00000090;
+    margin-top: 100px;
+    position: relative;
+}
+
+.sub_opis h3{
+    color: #fff;
+}
+
+.taro_card {
+    float: left;
+    margin: 0 7px 15px 0;
+    height: 100px;
+    width: 80px;
+    background: url(../img/rubashka.png) top left no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.taro_card img{
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.taro_card:hover img{
+    transform: scale(1.1);
+}
+
+footer{
+    margin-top: 20px;
+}
+
+/* second part */
+.logo-head, .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+    flex-direction: column;
+}
+
+.name p{
+    color: #ddc091;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.your-future{
+    line-height: 30px;
+}
+
+.your-future h3, .fillform, .your-future p h3{
+    color: #ddc091;
+}
+
+input, .order-btn{
+    border: none;
+    padding: 12px 10px;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: #d3b37c;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+input{
+    background-color: #fff;
+}
+
+.order button{
+    object-fit: cover;
+    transition: .2s ease-out;
+}
+
+.order:hover button{
+    transform: scale(0.9);
+}
+
+.vk-avatar img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.vk-header{
+    background: #4267b2 none repeat scroll 0% 0%;
+    padding: 4px 4px 4px 6px;
+    margin-bottom: 10px;
+}
+
+.vk-header-text{
+    padding: 2px 3px 1px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.vk-comment, .vk-comment-load{
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 225, 232);
+    padding-bottom: 15px;
+}
+
+.vk-comment-name{
+    color: rgb(43, 88, 122);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.vk-comment-text{
+    /* margin-left: 60px; */
+    color: rgb(0, 0, 0);
+}
+
+.vk-comment-like-count img {
+    width: 17px;
+}
+
+img {
+    border: 0px;
+}
+
+.vk-comment-like-count{
+    position: relative;
+}
+
+.vk-comment-like-count span{
+    position: relative;
+    top: 1px;
+    font-weight: bold;
+    color: rgb(114, 149, 178);
+    font-size: 15px;
+}
+
+.reg5 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: 0;
+    max-width: 200px;
+    padding: 12px 0;
+    font-size: 19px;
+    border-radius: 6px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    line-height: 100%;
+    text-decoration: none !important;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    cursor: pointer;
+    color: #091413 !important;
+    font-weight: 700;
+    background-color: #d3b37c;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.step_1 {
+    width: 100%;
+    display: none;
+    margin: 0 auto;
+    top: 40%;
+    position: fixed;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .name p{
+        font-size: 20px;
+    }
+
+    .profile p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .sub_opis{
+        margin-top: 70px;
+    }
+
+    .sub_opis h3{
+        font-size: 20px;
+    }
+
+    h5{
+        line-height: 40px;
+    }
+
+    .your-tarot h5{
+        font-size: 22px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
